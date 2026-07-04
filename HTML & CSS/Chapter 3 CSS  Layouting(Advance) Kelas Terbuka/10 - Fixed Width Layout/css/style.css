@@ -1,0 +1,51 @@
+body {
+    width: 960px;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header h1 {
+    text-align: center;
+}
+
+#nav, #highlight, #footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #efefef;
+    margin: 10px;
+}
+
+#nav li {
+    display: inline;
+    padding: 5px;
+}
+
+#highlight img {
+    width: 20%;
+}
+
+.article {
+    width: 30%;
+    margin: 1.5%;
+    padding: 1.5%;
+    background-color: #efefef;
+
+}
+
+.all-article {
+    flex-direction: row;
+    display: flex;
+}
+
+#content {
+    height: 100%;
+    overflow: auto;
+}
+
+.kolom-2 {
+    background-color: aliceblue;
+}
+
+.kolom-1, .kolom-3 {
+    background-color: antiquewhite;
+}
