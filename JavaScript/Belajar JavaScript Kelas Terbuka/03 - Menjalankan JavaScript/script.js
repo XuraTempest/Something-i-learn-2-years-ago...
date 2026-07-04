@@ -1,0 +1,1 @@
+console.log("ini adlaah javascript dari file external")

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h1 class="position-fixed top-0 text-primary shadow p-3 mb-5 bg-body-tertiary rounded mb-5">GUESS THE NUMBER</h1>
+            <div class="row mt-5 pt-5">
+                <h2 class="text-primary">EASY 1-5</h2>
+                <div class="input-group">
+                    <input type="number" class="form-control" 
+                    placeholder="Jumlah Nyawa" id="nyawa_easy">
+                    <button type="submit" class="btn btn-primary" id="total_nyawa_easy">Submit</button>
+                </div>
+
+                <div class="input-group mt-3 mb-3">
+                    <button type="submit" class="btn btn-primary" id="reset_button_easy">RESET</button>
+                </div>
+
+                <div class="input-group">
+                    <input type="number" class="form-control" id="easy" placeholder="Tebak Angka 1-5">
+                    <button type="submit" class="btn btn-primary" id="button_easy">Submit</button>
+                </div>
+
+                <span id="hasil_easy">Hasil</span>
+            </div>
+
+
+
+            
+            <div class="row mt-5"></div>
+            <h2 class="text-primary">NORMAL 1-10</h2>
+
+            <div class="input-group">
+                <input type="number" class="form-control" 
+                placeholder="Jumlah Nyawa" id="nyawa_normal">
+                <button type="submit" class="btn btn-primary" id="total_nyawa_normal">Submit</button>
+            </div>
+            
+            <div class="input-group mt-3 mb-3">
+                <button type="submit" class="btn btn-primary" id="reset_button_normal">RESET</button>
+            </div>
+
+            <div class="input-group">
+                <input type="number" class="form-control" id="normal" placeholder="Tebak Angka 1-10">
+                <button type="submit" class="btn btn-primary" id="button_normal">Submit</button>
+            </div>
+            
+            <span id="hasil_normal">Hasil</span>
+
+
+
+
+            <div class="row mt-5"></div>
+            <h2 class="text-primary">HARD 1-20</h2>
+
+            <div class="input-group">
+                <input type="number" class="form-control" 
+                placeholder="Jumlah Nyawa" id="nyawa_hard">
+                <button type="submit" class="btn btn-primary" id="total_nyawa_hard">Submit</button>
+            </div>
+            
+            <div class="input-group mt-3 mb-3">
+                <button type="submit" class="btn btn-primary" id="reset_button_hard">RESET</button>
+            </div>
+
+            <div class="input-group">
+                <input type="number" class="form-control" id="hard" placeholder="Tebak Angka 1-20">
+                <button type="submit" class="btn btn-primary" id="button_hard">Submit</button>
+            </div>
+            
+            <span id="hasil_hard">Hasil</span>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    </body>
+</html>
