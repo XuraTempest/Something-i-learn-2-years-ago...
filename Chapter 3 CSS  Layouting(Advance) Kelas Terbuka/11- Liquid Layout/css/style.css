@@ -1,0 +1,44 @@
+body {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+}
+
+.content {
+    overflow: auto;
+}
+
+.nav, .feature, .footer {
+    background-color: burlywood;
+    margin: 5px 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.all-article {
+    display: flex;
+}
+
+.kolom-1, .kolom-2, .kolom-3 {
+    background-color: burlywood;
+    width: 30%;
+    padding: 1%;
+}
+
+.kolom-2 {
+    margin: 0% 2%;
+}
+
+.feature img {
+    width: 30%;
+}
+
+.content h3 {
+    text-align: center;
+}
