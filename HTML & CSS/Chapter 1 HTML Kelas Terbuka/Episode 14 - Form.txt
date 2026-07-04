@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+</head>
+<body>
+
+<form>
+Nama Depan : <input type = "text"></input><br>
+Nama Belakang : <input type = "text"></input><br>
+Password : <input type = "password"></input><br>
+<h4>WNI Radio Button</hr><br>
+<input type = "radio" name = "wni" value = "ya"><label for = "ya">ya</input><br>
+<input type = "radio" name = "wni" value = "tidak"><label for "tidak">tidak</input><br>
+<h4>Musik favorit: (CheckBox)</h4>
+<input type = "Checkbox" name = "musik" value = "dangdut"><label for = "dangdut">dangdut</input>
+<input type = "Checkbox" name = "musik" value = "jazz"><label for = "jazz">jazz</input>
+<input type = "Checkbox" name = "musik"><label for = "metal">metal</input>
+<h4>DropDown List</h4>
+<select name = "pekerjaan">
+<option value = "mahasiswa">Mahasiswa</option>
+<option value = "dokter">Dokter</option>
+<option value = "polisi">Polisi</option>
+<option value = "wirausaha">Wirausaha</option>
+</select><br>
+<h4>Upload File Fotdir</h4>
+<input type = "file" name = "foto" value = "upload_foto"></input><br><br>
+<input type = "button" name = "submit" value = "submit">
+</form>
+
+</body>
+</html>
+
+

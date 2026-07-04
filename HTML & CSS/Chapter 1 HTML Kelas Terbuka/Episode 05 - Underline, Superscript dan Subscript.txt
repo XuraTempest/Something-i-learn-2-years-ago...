@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+# Untuk command menggunakan ctrl + /
+# Heading <h>
+<h1>Ini Adalah Heading 1</h1>
+<h2>Ini Adalah Heading 2</h2>
+<h3>Ini Adalah Heading 3</h3>
+<h4>Ini Adalah Heading 4</h4>
+<h5>Ini Adalah Heading 5</h5>
+<h6>Ini Adalah Heading 6</h6>
+
+<h1> Pembatas Antara atas dan bawah, Ucup Dan Otong</h1>
+
+# paragraf <p>
+# bolt <b>
+# italic <i>
+#
+<p>nama saya adalah ucup surucup teman dari otong sutorong. Saya sekolah di <b>SMA IT</b> terbaik se Indonesia. Jangan tanya saya karena saya terlalu jago</p>
+
+<p>saya adalah otong surotong teman dari ucup surucup. Saya juga <u>jagoan</u> jadi jangan tanya saya, tanya saja sama <i>guru anda</i></p>
+
+# superscript <sup>
+# subscript <sub> 
+
+<h1>Ini adalah SuperScript</h1>
+
+<p>Menurut Einstain Rumus Relativitas adalah E = MC<sup>2</sup>. lalu darbon dioksida adalah CO<sub>2</sub></p>
+
+# Jika Di Suatu Paragraf Memiliki baris kosong bahkan sebuah line maka akan dianggap sebuah spasi yang berjumlah satu
+
+<p>Ini adalah Artikel yang menarik</p>
+<p>Ini adalah            Artikel yang menarik</p>
+<p>Ini adalah 
+
+
+Artikel yang menarik</p>
+
+
+
+</body>
+</html>

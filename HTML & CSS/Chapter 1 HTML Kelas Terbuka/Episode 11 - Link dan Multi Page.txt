@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Links</title>
+</head>
+<body>
+
+<h1>Link</h1>
+<h4>Link ke halaman Website lain</h4>
+
+<a href = "https://www.google.com">Google</a>
+
+<h4>Link ke halaman sendiri</h4>
+
+<ul>
+<li><a href = "">Resep</a></li>
+<ul>
+<li>Note: Sebenarnya Untuk masuk kedalam web kita sendiri kita harus menggunakan aplikasi yaitu vs studio lalu memasukkan sesuai dengan judul dari html yang telah di buat, lalu setelah itu mengisi isi dari web tersebut lalu masukkan halaman atau link halaman web tersebut ke dalam a lalu memasukkan href = "nama link", lalu jika ingin info lebih lanjut bisa di lihat di toturial langsung ke episode 11</li>
+</ul>
+<li><a href = "">Story</a></li>
+</ul>
+
+<h4>E-mail</h4>
+<a href = "mailto:farenzawiyantnaufandra@gmail.com">farenzawiyantnaufandra@gmail.com</a>
+<p>Note: sebenarnya ini belum lengkap bisa dilihat di episode 11 kelas terbuka html</p>
+</body>
+</html>
+
+

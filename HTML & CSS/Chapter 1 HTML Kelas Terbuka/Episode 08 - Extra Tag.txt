@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tag Extra</title>
+</head>
+<body>
+
+<h4>Singkatan</h4>
+<p># Untuk membuat SD ini memiliki arti atau kita menambahkan arti yang perlu kita tambahkan maka kita perlu menambahkan abbreviation dengan command abbr, contohnya adalah di bawah ini</p>
+<p>Ucup sekolah di <abbr title = "Sekolah Dasar">SD</abbr> Merdeka</p>
+
+<h4>Acronym</h4>
+<p>Kemudian Ucup bekerja di <acronym title = "National Aeronautics and Space Administration">NASA</acronym> cabang garut</p>
+
+<h4>Citetation dan Definition</h4>
+<p>Saya sudah membaca buku Harry Potter - <cite>Order of Phoenix</cite></p>
+<p><dfn>Garut</dfn> adalah salah satu kota di Jawa Barat</p>
+
+<h4>Insert dan Delete</h4>
+<p>Otong adalah seorang <del>jagoan</del> <ins>Ksatria</ins> Web Programming</p>
+</body>
+</html>
+
+# ada pertanyaan yang menarik di kolom komentar yaitu mengenai abbr, berikut pertanyaan dari episode 09
+
+pertanyaan: Bang saya mau tanya, acrnym dan abbr kan tag digunakan untuk menunjukkan sebuah akronim atau sebuah kepanjangan kata, nah pertanyaannya nya adalah kapan kita harus menggunakan <abbr> dan <acrynm> ?
+
+jawab: Ini lebih ke semantic, abbr itu untuk singkatan, abbrv untuk kependekan. Misal abbr itu kaya ITB, kalau abbrv itu kaya Unbraw
+
+# lalu ada pertanyaan selanjutnya yaitu mengenai perbedaan antara italic dan site, yaitu
+
+pertanyaan: bang bedanya italic sama cite apa bang?
+
+jawab: Italic buat miringkan text
+Cite buat miringkan text dengan kelebihan bisa buat link

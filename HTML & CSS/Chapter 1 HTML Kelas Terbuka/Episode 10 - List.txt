@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Belajar tentang List</title>
+</head>
+<body>
+
+<h1>Order List (List Yang Berurut)</h1>
+<h4>Ordered List (ol).</h4>
+<ol>
+List Item (li)
+<li>Pasta 1 Bungkus</li>
+<li>Daging Satu Cincang</li>
+<li>Tomat 0,25 Kg</li>
+<li>Paprika 0,25 Kg</li>
+<li>Bawang Merah 2 Siung</li>
+<li>Bawang Putih 2 Siung</li>
+<li>Bumbu Dapur</li>
+#Lalu ini Disebut dengan list bersarang/Nested List
+<ul>
+<li>Garam</li>
+<li>Gula</li>
+</ul>
+</ol>
+
+<h1>Unorder List (List Yang Tidak Berurut)
+<h4>Unordered List (ul)</h4>
+<ul>
+List Item (li)
+<li>Pasta 1 Bungkus</li>
+<li>Daging Satu Cincang</li>
+<li>Tomat 0,25 Kg</li>
+<li>Paprika 0,25 Kg</li>
+<li>Bawang Merah 2 Siung</li>
+<li>Bawang Putih 2 Siung</li>
+<li>Bumbu Dapur</li>
+#Lalu ini Disebut dengan list bersarang/Nested List
+<ol>
+<li>Garam</li>
+<li>Gula</li>
+</ol>
+</ul>
+
+<h1>Definition List (List Yang Terdefinisi)</h1>
+<h4>Definition List (dl)</h4>
+<dl>
+<dt>Siapkan Pasta</dt>
+<dd>Rebuslah Spagetti Hingga Matang Lalu Angkat dan tiriskan sebentar saja</dd>
+<dt>Buat Saus Spagetti</dt>
+<dd>Panaskan wajan, lalu tumis bawang putih dan merah hingga harum dan tambahkan garam, kaldu ayam dan micin sesuka hati</dd>
+<dt>Sajikan</dt>
+<dd>Campur menggunakan spatula, sendok, garpu. lalu santaplah</dd>
+</dl>
+
+</body>
+</html>
+
+

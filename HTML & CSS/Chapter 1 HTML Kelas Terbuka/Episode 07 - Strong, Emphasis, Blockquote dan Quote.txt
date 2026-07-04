@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Strong, Emphasis, Blockquote dan Quote</title>
+</head>
+<body>
+
+<h1>Strong</h1>
+
+<p>
+<strong>Perhatian</strong>: Jangan buang sampah sembarangan
+</p>
+
+<h1>BlockQuote</h1>
+
+<blackquote>
+mensana incorporesano, men ke sana, Women ke sono
+</blackquote>
+
+<h1>Emphasis dan Quote</h1>
+
+<p>
+ini teman <em>nongkrong</em> bukan tempat untuk <strong>berantem</strong>. Bos ku bilang <q>selalu jaga kesehatan</q>
+</p>
+
+</body>
+</html>
+
+

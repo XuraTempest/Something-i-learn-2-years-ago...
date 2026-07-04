@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Attributes</title>
+</head>
+<body>
+
+<h1>Atrribute a (anchor/penaruhan link)</h1>
+
+<a href = "http://www.google.com">Google</a>
+
+<h1>Atrribute p (paragraph/paragraf)</h1>
+
+<p><aabrv title = "Sekolah Dasar">SD</abbrv>/</p>
+
+<p align = "justify" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque quam lectus, nec pretium massa rhoncus vitae. Nam eget metus eget metus aliquet mattis. Vivamus accumsan auctor tortor sed semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce fermentum pretium pharetra. Aliquam ullamcorper vestibulum lorem, hendrerit lobortis leo bibendum non. Quisque elementum felis ut lacus lacinia, non mollis eros aliquet.</p>
+
+<p align = "right" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque quam lectus, nec pretium massa rhoncus vitae. Nam eget metus eget metus aliquet mattis. Vivamus accumsan auctor tortor sed semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce fermentum pretium pharetra. Aliquam ullamcorper vestibulum lorem, hendrerit lobortis leo bibendum non. Quisque elementum felis ut lacus lacinia, non mollis eros aliquet.</p>
+
+<p>Sebenarnya masih sangat banyak banget</p>
+</body>
+</html>
+
+

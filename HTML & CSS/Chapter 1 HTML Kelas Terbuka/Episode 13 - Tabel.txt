@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tabel</title>sa
+</head>
+<body>
+
+<h1>Membuat Tabel</h1>
+
+<p>Ada beberapa Method atau Cara yang dapat di gunakan dalam tabel ini yaitu <br>1.tr, baris<br>2.td, data<br>3.th, header</p>
+
+<h4>Tabel Standar</h4>
+
+<table border = "1">
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+</tr>
+</table>
+
+<h4>Dengan Header</h4>
+
+<table border = "1">
+<tr>
+<th>Senin</th>
+<td>10:00</td>
+<td>12:00</td>
+<td>14:00</td>
+</tr>
+<tr>
+<th>Selasa</th>
+<td>10:00</td>
+<td>12:00</td>
+<td>14:00</td>
+</tr>
+</table>
+
+<br>
+
+<table border = "1">
+<th>Senin</th>
+<th>Selasa</th>
+<tr>
+<td>10:00</td>
+<td>10:00</td>
+</tr>
+<td>10:00</td>
+<td>11:00</td>
+</table>
+
+<br>
+
+<table border = "1">
+<th>Jam</th>
+<th>Senin</th>
+<tr>
+<td>10:00</td>
+<td>Breangkat Sekolah</td>
+</tr>
+<tr>
+<td>12:00</td>
+<td>Makan Siang</td>
+</tr>
+</table>
+
+<h4>Alokasi Kolom<br>1. Rowspan = Menambah/mendorong kolom ke kanan sebanyak yang di inginkan<br>2. Colspan = Menambah/mendorong kolom ke bawah sebanyak yang di inginkan</h4>
+
+<table border = "1">
+<th>Jam</th>
+<th>Senin</th>
+<th>Selasa</th>
+<tr>
+<td>10:00</td>
+<td>Berangkat Sekolah</td>
+<td>Berangkat Olahraga</td>
+</tr>
+<tr>
+<td rowspan = "3">12:00</td>
+<td colspan = "2">Makan Siang</td>
+</tr>
+<tr>
+<td colspan = "2">Shalat Dzuhur</td>
+</tr>
+<tr>
+<td colspan = "2">Main Game</td>
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+
