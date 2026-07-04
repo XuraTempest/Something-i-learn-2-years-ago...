@@ -1,0 +1,139 @@
+:root {
+    --first-color: #1E3A8A;
+    --second-color: #2563EB;
+    --third-color: #10B981;
+    --fourth-color: #F59E0B;
+    --fifth-color: #EF4444;
+    --gray-color: #B0B0B0;
+}
+
+
+body {
+    background-color: var(--first-color);
+}
+
+
+.container {
+    background-color: var(--first-color);
+    display: grid;
+    grid-template-areas: 
+        "header header navbar"
+        "gallery1 gallery2 gallery3"
+        "gallery4 gallery5 gallery6"
+        "gallery7 gallery8 gallery9"
+        "footer footer footer"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vw;
+    place-self: center;
+}
+
+h1 {
+    grid-area: header;
+    color: var(--gray-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.navbar {
+    grid-area: navbar;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--gray-color);
+}
+
+h1, .navbar, .footer {
+    text-align: center;
+}
+
+.footer {
+    color: var(--gray-color);
+    grid-area: footer;
+}
+
+.gallery1, .gallery3, .gallery4, .gallery6, .gallery7, .gallery9 {
+    width: 20vw;
+}
+
+.gallery2, .gallery5, .gallery8 {
+    width: 40vw;
+}
+
+.gallery1 {
+    grid-area: gallery1;
+}
+
+.gallery2 {
+    grid-area: gallery2;
+}
+
+.gallery3 {
+    grid-area: gallery3;
+}
+
+.gallery4 {
+    grid-area: gallery4;
+}
+
+.gallery5 {
+    grid-area: gallery5;
+}
+
+.gallery6 {
+    grid-area: gallery6;
+}
+
+.gallery7 {
+    grid-area: gallery7;
+}
+
+.gallery8 {
+    grid-area: gallery8;
+}
+
+.gallery9 {
+    grid-area: gallery9;
+}
+
+.item {
+    background-color: white;
+    border-radius: 10%;
+    border: 1vw var(--fourth-color) solid;
+    transition: all 1s ease;
+    box-shadow: none;
+}
+
+.item:hover {
+    background-color: var(--second-color);
+    box-shadow: 0 0.5vw 1vw rgba(0,0,0,0.3);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "navbar"
+      "gallery1"
+      "gallery2"
+      "gallery3"
+      "gallery4"
+      "gallery5"
+      "gallery6"
+      "gallery7"
+      "gallery8"
+      "gallery9"
+      "footer";
+    grid-template-columns: 1fr;
+    gap: 2vw;
+    padding: 0 2vw;
+    }
+
+    .gallery1, .gallery2, .gallery3, .gallery4, .gallery5, .gallery6, .gallery7, .gallery8, .gallery9 {
+        width: 96vw;
+    }
+
+    h1, .navbar {
+        text-align: left;
+    }
+}

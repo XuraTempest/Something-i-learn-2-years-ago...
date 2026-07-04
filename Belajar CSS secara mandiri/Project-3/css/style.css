@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    margin: 100px auto;
+
+    background-color: white;
+
+    animation: examples 4s ease 0s infinite alternate both running;
+
+}
+
+.box:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+    background-image: linear-gradient(red,blue);
+}
+
+
+@keyframes examples {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(200px, 0) rotate(90deg);
+    }
+    50% {
+        transform: translate(200px, 200px) rotate(180deg);
+    }
+    75% {
+        transform: translate(0, 200px) rotate(270deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}

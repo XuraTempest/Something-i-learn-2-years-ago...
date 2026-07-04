@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #FF6F61;
+    --second-color: #2C3E50;
+    --third-color: #9B59B6;
+}
+
+body {
+    background-color: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transform: none;
+
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #2C3E50;
+}

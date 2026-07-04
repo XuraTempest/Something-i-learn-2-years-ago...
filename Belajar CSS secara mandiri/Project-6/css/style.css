@@ -1,0 +1,40 @@
+button {
+    width: 250px;
+    height: 200px;
+    border-radius: 5%;
+    border-color: white;
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+    overflow: hidden;
+    font-size: 20px;
+    color: white;
+
+}
+
+button::before,
+button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: opacity 2s ease;
+}
+
+button::before {
+    background: linear-gradient(to bottom right, #f11414ef, #0f40c5ef);
+    opacity: 1;
+}
+
+button::after {
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    opacity: 0;
+}
+
+button:hover::before {
+    opacity: 0;
+}
+
+button:hover::after {
+    opacity: 1;
+}

@@ -1,0 +1,153 @@
+// catatan dan kode gagal
+
+// kurang.addEventListener("click", () => {
+//     var th = document.getElementById("hapus");
+//     var table = document.querySelector("table");
+//     var belum_remove = document.getElementById("belum");
+//     var cek_belum;
+//     if(belum_remove) {
+//         belum_remove.remove();
+//     }
+
+//     if(table.rows.length === 1) {
+//         cek_belum = true;
+//         let bagian_tombol = document.getElementsByClassName("control")[1];
+//         var belum = document.createElement("p")
+//         belum.id = "belum";
+//         belum.textContent = "belum ada list, isilah terlebih dahulu";
+//         bagian_tombol.appendChild(belum);
+//     } else {
+//         cek_belum = true;
+//         if(th.textContent === "" || th.textContent === null) {
+//             th.textContent = "Hapus";
+//             for(let i = 0; 10 < i; i++) {
+//                 selesai_sudah = document.querySelectorAll("button")
+//                 selesai_sudah.style.display = "block";
+//             }
+//         } else {
+//             th.textContent = "";
+//         };
+//     };
+// });
+
+        
+
+
+    // for(let i = 0; table.rows.length + 1 < i; i++) {
+    // let mau_selesai = document.querySelectorAll(2 + i);
+    // let
+    // };
+
+
+
+input_submit.addEventListener("click", () => {
+    let isi_nama = document.getElementById("nama").value;
+    let isi_kegiatan = document.getElementById("kegiatan").value;
+    let isi_waktu = document.getElementById("waktu").value;
+    let bagian_tombol = document.getElementsByClassName("control")[0]
+    let table = document.querySelector("table");
+
+    var old_msg = document.getElementById("error-msg");
+    if(old_msg) {
+        old_msg.remove()
+    };
+
+    if(isi_nama === "" || isi_kegiatan === "")  {
+        var p = document.createElement("p");
+        p.id = "error-msg";
+        p.textContent = "tolong isi nama atau kegiatan terlebih dahulu"
+        bagian_tombol.appendChild(p);
+    } else {
+        var tr = document.createElement("tr");
+        table.appendChild(tr);
+        tr.className = table.rows.length;
+        tr.style.animationName = "kanankekiri";
+        tr.style.animationTimingFunction = "ease";
+        tr.style.animationFillMode = "forward";
+        tr.style.animationDuration = "0.5s";
+
+        var selesai = document.createElement("button");
+        selesai.textContent = "✔";
+        selesai.style.borderRadius = "50%";
+        tr.appendChild(selesai);
+
+        var nama = document.createElement("td");
+        nama.textContent = isi_nama;
+        tr.appendChild(nama);
+        
+        var kegiatan = document.createElement("td");
+        kegiatan.textContent = isi_kegiatan;
+        tr.appendChild(kegiatan);
+        
+        var waktu = document.createElement("td");
+        waktu.textContent = isi_waktu;
+        if(waktu.textContent === "" || waktu.textContent === null) {
+            waktu.textContent = "-";
+        };
+        tr.appendChild(waktu);
+
+        selesai.addEventListener("click", () => {
+            tr.remove()
+            removeTodo()
+        });
+
+    }
+});
+
+
+
+
+
+/*catatan terakhir: kenapa table bisa ditaruh disitu? sementara yang lain butuh format yang lebih dan lainnya? lalu apakah bisa langsung tau? kalau make querySelector? */
+
+// code ku sebelumnya input_submit.addEventListener("click", () => {
+//     let input_nama = document.getElementById("nama").value;
+//     let input_kegiatan = document.getElementById("kegiatan").value;
+//     let bagian_tombol = document.getElementsByClassName("control")[0];
+//     let table = document.querySelector("table");
+
+//     var old_msg = document.getElementById("error-msg");
+//     if(old_msg) {
+//         old_msg.remove();
+//     };
+
+//     if(input_nama === "" && input_kegiatan === "" ) {
+//         let p = document.createElement("p");
+//         p.textContent = "Tolong isi Nama dan Kegiatan dulu";
+//         p.id = "error-msg";
+//         bagian_tombol.appendChild(p);
+//     } else {
+//         var tr = document.createElement("tr");
+//         var no = document.createElement("td");
+//         var nama = document.createElement("td");
+//         var kegiatan = document.createElement("td");
+//         var selesai = document.createElement("button");
+
+//         table.appendChild(tr);
+//         tr.id = "tr";
+
+//         no.textContent = table.rows.length - 1;
+//         table.appendChild(no);
+//         no.id = "no";
+        
+//         nama.textContent = input_nama;
+//         table.appendChild(nama);
+//         nama.id = "nama";
+        
+//         kegiatan.textContent = input_kegiatan;
+//         table.appendChild(kegiatan);
+//         kegiatan.id = "kegiatan";
+        
+//         selesai.textContent = "✔";
+//         table.appendChild(selesai);
+//         selesai.id = "selesai";
+//     };
+// });
+
+// let done = document.getElementById("selesai");
+// done.addEventListener("click", () => {
+//     table.removeChild(tr)
+//     table.removeChild(no)
+
+
+// });
