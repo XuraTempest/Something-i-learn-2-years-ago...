@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(15, 73, 128);
+}
+
+.judul {
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.judul-judul {
+    font-weight: bold;
+    color: rgb(15, 73, 128);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline;
+    font-size: 100px;
+    margin: 10px;
+}
+
+.gambar-bri {
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+}
+
+.fullname-1, .date-1, .gender-1, .address-1, .number-1{
+    color: white;
+    width: 177px;
+}
+
+.fullname-2, .date-2, .gender-2, .address-2, .number-2{
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.fullname-2:hover {
+    outline: cornflowerblue inset 2px;
+}
+
+.fullname-2:active {
+    outline: white inset 2px;
+}
