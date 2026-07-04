@@ -1,0 +1,78 @@
+Catatan Javascript
+
+📘 Rangkuman Lengkap: NaN vs undefined vs null di JavaScript
+Perbandingan	NaN (Not-a-Number)	undefined	null
+Arti	Hasil operasi numerik yang tidak valid	Variabel belum diberi nilai	Nilai kosong secara eksplisit
+Tipe data	number	undefined	object (bug lama di JS, tetap dibiarkan)
+Contoh	"abc" * 2 → NaN	let x; → undefined	let x = null;
+Berasal dari	Operasi matematis yang gagal atau tidak logis	Variabel tak diberi nilai atau fungsi tak return	Penetapan manual nilai kosong
+Diperoleh ketika	Kalkulasi gagal (parseInt("abc"))	Akses property tidak ada, atau return kosong	Digunakan untuk reset data atau placeholder kosong
+Perbandingan ketat (===)	NaN === NaN → false	undefined === undefined → true	null === null → true
+Perbandingan longgar (==)	NaN == NaN → false	undefined == null → true	null == undefined → true
+Bisa dicek dengan	isNaN(value) atau Number.isNaN()	typeof value === "undefined"	value === null
+
+🔍 Penjelasan Detail:
+1. 🔹 NaN – Not-a-Number
+Bukan nilai kosong, melainkan hasil dari operasi angka yang tidak valid.
+
+Contoh:
+
+js
+Salin kode
+let hasil = "hello" / 2;  // NaN
+console.log(typeof hasil); // "number"
+NaN tidak pernah sama dengan dirinya sendiri:
+
+js
+Salin kode
+NaN === NaN // false
+2. 🔸 undefined
+Otomatis diberikan JavaScript ke variabel yang sudah dideklarasikan tapi belum diisi.
+
+Juga diberikan ke fungsi tanpa return.
+
+Contoh:
+
+js
+Salin kode
+let a;
+console.log(a); // undefined
+
+function halo() {}
+console.log(halo()); // undefined
+Perlu dicek dengan:
+
+js
+Salin kode
+typeof a === "undefined"
+3. 🔸 null
+Menandakan nilai kosong secara eksplisit.
+
+Dipakai oleh developer untuk mengosongkan nilai, bukan karena tidak sengaja.
+
+Contoh:
+
+js
+Salin kode
+let data = null;
+console.log(data); // null
+Secara tipe, ini object, walaupun ini adalah bug historis:
+
+js
+Salin kode
+typeof null // "object"
+✅ Kapan Pakai Apa?
+Kasus	Gunakan
+Variabel belum diberi nilai	undefined
+Fungsi belum mengembalikan apa-apa	undefined
+Hasil kalkulasi tidak masuk akal (seperti 0/0)	NaN
+Ingin menghapus nilai dari variabel dengan sengaja	null
+Ingin representasi data kosong yang valid	null
+
+🧠 Ringkasan Mnemonik:
+NaN → "Angka" yang rusak.
+
+undefined → Belum ada nilai (belum didefinisikan).
+
+null → Kosong, tapi secara sengaja.
+

@@ -1,0 +1,264 @@
+note 1: kita bisa menggunakan % ketimbang menggunakan px karena % lebih flexibel untuk semua, mau itu laptop komputer dan hp
+lalu bisa juga untuk membuat ukuran tertentu yang tidak bisa diikuti oleh sebuah device dengan menggunakan ui dan ux khusus
+bikinan kita yang di khususkan untuk ukuran tersebut.
+
+contoh: Jika .container hanya memiliki lebar 500px (misalnya di HP), maka jika kita menggunakan satuan pixel (px) 
+tetap untuk elemen-elemen di dalamnya (seperti .kolom-konten { width: 500px; }), maka:
+
+.kolom-konten akan memakan seluruh lebar container, dan
+
+tidak ada ruang tersisa untuk .kolom-menu, sehingga layout bisa bentrok atau rusak.
+
+Sebaliknya, jika kita menggunakan satuan persentase (%), maka lebar elemen akan mengikuti lebar parent-nya (.container).
+
+Contohnya:
+
+.kolom-konten { width: 70%; } → mengambil 70% dari 500px = 350px
+
+.kolom-menu { width: 30%; } → mengambil 30% dari 500px = 150px
+
+Total: 350px + 150px = pas 500px. Jadi layout tetap rapi dan tidak bentrok, apapun ukuran .container-nya.
+
+
+
+
+
+note 2: lebih baik menggunakan flex ketimbang menggunakan float, lalu ada penjelasan tentang inline, block, inline-block 
+dan wrap.
+
+ini dia:
+🧠 Rangkuman Pembelajaran Flex, Inline, dan Wrap
+🔹 1. Perbedaan display: flex vs inline
+Konsep	flex	inline
+-Jenis	block-level container	inline-level element
+-Kontrol Tata Letak	Sangat fleksibel: bisa diatur arah, wrapping, alignment, spacing 
+ Tidak bisa diatur layout seperti flex
+-Ukuran Elemen	Mengisi seluruh lebar secara default	Hanya sebesar kontennya
+-Susunan	Default: horizontal (row), bisa diubah	Horizontal, seperti huruf berjajar
+-Gunakan Saat	Perlu layout yang kompleks atau responsif	Hanya untuk teks atau elemen kecil berjajar
+
+🔹 2. Apa itu inline-block?
+Gabungan dari inline dan block.
+
+Sejajar horizontal seperti inline, tapi:
+
+Bisa diberi padding, margin, width, height seperti block.
+
+🔹 3. float vs flex
+Konsep	float	flex
+-float itu membuat suatu konten menjadi di samping konten lainnya, contohnya koran, disamping gambar ada tulisan
+-flex itu make block, yang artinya membuat baris baru untuk kontennya, lalu flex lebih flexibel karena dapat diatur sesuai
+ yang dinginkan oleh si programmer
+
+🔹 4. Flex Direction
+row = elemen sejajar dari kiri ke kanan
+
+column = elemen dari atas ke bawah
+
+row-reverse dan column-reverse = arah dibalik
+
+🔹 5. Flex Wrap
+Properti	Penjelasan
+nowrap	Semua item tetap satu baris, meskipun sempit
+wrap	Item akan pindah ke baris bawah saat tidak cukup ruang
+wrap-reverse	Item akan pindah ke baris atas (terbalik dari wrap biasa)
+
+🔹 6. Kesimpulan Besar
+display: flex adalah cara modern, powerful, dan fleksibel untuk menyusun elemen.
+
+inline cocok untuk elemen kecil seperti teks dan link, tidak cocok untuk layout.
+
+float masih dipakai sesekali, tapi flex lebih kuat dan mudah.
+
+Gunakan flex-wrap: wrap jika ingin layout berpindah ke bawah saat ruang sempit.
+
+Untuk desain responsif dan rapi, flex + wrap adalah kombinasi yang sangat disarankan.
+
+
+
+
+
+
+note 3, penjelasan grid method yaitu justify content dan ada 3 method khusus yaitu: 
+-Space-Evenly
+-Space-Between
+-Space-Around
+
+pengertian:
+
+📌 Misalkan kamu punya 3 item dalam grid satu baris:
+css
+Salin
+Edit
+[Item1] [Item2] [Item3]
+1. 🧱 justify-content: space-between;
+📏 Jarak hanya di antara item, tidak ada ruang di kiri-kanan container.
+
+|[1]   [2]   [3]|
+Jarak antara item = sama
+
+Sisi kiri & kanan kosong (tidak ada jarak)
+
+2. 🧱 justify-content: space-around;
+📏 Jarak di kiri-kanan item sama, tapi karena ada dua sisi luar (kiri dan kanan grid), maka sisi luar akan tampak setengah dari jarak antar item.
+
+|  [1]  [2]  [3]  |
+Jarak antar item = sama
+
+Tapi sisi luar (kiri & kanan container) = ½ dari jarak antar item
+
+3. 🧱 justify-content: space-evenly;
+📏 Semua jarak, termasuk kiri, antar item, dan kanan = sama rata
+
+| [1]  [2]  [3] |
+Jarak antar item = sama
+
+Jarak kiri dan kanan container = sama juga
+
+🧠 Ringkasan Tabel Perbandingan
+Properti	Antara Item	Kiri/Kanan Grid	Catatan Ringkas
+space-between	✅ Sama	❌ Nol	Tidak ada jarak di pinggir container
+space-around	✅ Sama	🌓 Setengah	Sisi luar setengah dari antar item
+space-evenly	✅ Sama	✅ Sama	Semua spasi dibagi merata total
+
+
+
+
+
+note 4, pada grid template colums atau rows, lebih baik menggunakan fr daripada menggunakan persen itu sendiri,
+karena dapat menyesuaikan dan lebih fleksibel ketimbang dengan persen
+
+
+
+
+
+
+note 5, penjelasan tentang meta, viewport dan juga dapat menggunakan suatu elemen supaya semua class, name atau tipe
+contoh meta dan viewport
+
+🧩 1. Apa itu <meta>?
+<meta> adalah tag HTML yang memberikan informasi tambahan (metadata) tentang halaman web ke browser.
+
+Tidak menghasilkan tampilan apa pun di layar (tidak terlihat oleh pengguna).
+
+Ditaruh di dalam <head>...</head>.
+
+🧩 2. Apa itu name="viewport"?
+Artinya: tag ini khusus untuk mengatur tampilan halaman di layar pengguna, terutama pada layar kecil seperti HP.
+
+"Viewport" = ukuran layar yang digunakan untuk menampilkan halaman web.
+
+🧩 3. Apa itu content="..."?
+Ini adalah isi pengaturan yang diterapkan ke viewport.
+
+Kita pecah lagi:
+
+✴️ width=device-width
+Artinya: lebar halaman web diatur sesuai lebar layar perangkat (HP, tablet, laptop, dsb).
+
+Contoh:
+
+Jika HP lebarnya 360px, maka halaman akan mengikuti lebar 360px.
+
+🔍 Tanpa ini, halaman akan terlihat kecil di HP dan pengguna harus zoom.
+
+✴️ initial-scale=1.0
+Artinya: Skala awal halaman = 1 kali (100%) saat pertama kali dibuka.
+
+Tidak diperbesar atau diperkecil otomatis oleh browser.
+
+📌 Kenapa Tag Ini Penting?
+Tanpa Tag Ini	Dengan Tag Ini
+Web terlihat kecil dan menyempit di HP	Web pas dan responsif di layar HP
+User harus zoom manual	Web langsung tampil sesuai layar
+Layout bisa kacau	Layout akan rapi dan proporsional
+
+lalu mengenai yang itu, selector khusus, kita dapat mengawali nya dengan kurung siku, [] seperti ini,
+lalu masukkan yang kita inginkan,contohnya, ingin menggunakan semua class yang memiliki nama seperti col- ini dia:
+[class*="col-"] yang artinya, semua class yang nama awalan atau nama atau semua nama yang memlik col- akan di edit sebagai...
+lalu, kita tinggal memilih nya dengan kurung kurawal {}, contohnya seperti ini,
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+yang artinya semua class col- yang memiliki kemiripan, kesamaan atau ada katanya col- akan mendapatkan float left, dan
+padding setiap sisi sebanyak 10px.
+itulah gunanya kurung siku dan kurung kurawal dalam css, untuk mempermudah dan membuat pekerjaan menjadi sederhana
+
+
+
+
+
+
+note 6, mengenai perbedaan layar hp dan laptop, kita mempelajari bahwa medua quarry adalah suatu hal yang penting dalam css
+mengapa? simak penjelasan berikut...
+
+📝 Catatan: Media Query di CSS
+📌 Pengertian
+@media digunakan untuk membuat website responsif, yaitu menyesuaikan tampilan berdasarkan ukuran atau karakteristik perangkat (HP, tablet, laptop, dll).
+
+📐 Struktur Umum
+
+@media only screen and (kondisi) {
+  /* CSS khusus untuk kondisi tersebut */
+}
+📎 Contoh Dasar:
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+Artinya:
+
+Jika lebar layar ≤ 600px, maka:
+
+Background halaman jadi biru muda
+
+Semua elemen dengan class seperti col-1, col-2, dst akan penuh lebar (100%) → cocok untuk tampilan HP
+
+🧩 Daftar Atribut/Kondisi yang Bisa Digunakan:
+Atribut Media Query	Fungsi
+max-width	Berlaku jika lebar layar ≤ nilai
+min-width	Berlaku jika lebar layar ≥ nilai
+max-height	Berlaku jika tinggi layar ≤ nilai
+min-height	Berlaku jika tinggi layar ≥ nilai
+orientation: portrait	Berlaku jika perangkat dalam posisi berdiri (HP biasa)
+orientation: landscape	Berlaku jika perangkat tidur (horizontal)
+aspect-ratio	Berlaku jika rasio layar sesuai (misal 16/9)
+resolution	Cek resolusi layar (misal: min-resolution: 300dpi)
+hover	Cek apakah device mendukung hover
+pointer	Cek jenis pointer (fine, coarse, none)
+
+🎯 Contoh Tambahan:
+✅ Tablet (antara 601px sampai 1024px):
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+✅ Mode Landscape:
+
+@media (orientation: landscape) {
+  body {
+    background-color: yellow;
+  }
+}
+
+🧠 Tips:
+Gunakan media query untuk mengubah layout (grid, kolom, font, warna) berdasarkan ukuran layar.
+
+Selalu mulai dengan:
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+di <head> HTML kamu agar responsif bekerja dengan benar di perangkat mobile.
