@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contoh px, em, rem, vw, vh</title>
+<style>
+  html {
+    font-size: 16px; /* basis rem */
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  .box {
+    border: 2px solid #333;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  /* px: ukuran absolut */
+  .px-text {
+    font-size: 20px;
+  }
+  .px-box {
+    width: 200px;
+    height: 100px;
+    background-color: #fdd;
+  }
+
+  /* em: relatif terhadap parent font-size */
+  .em-text {
+    font-size: 1.25em; /* 1.25 x parent font-size */
+  }
+  .em-box {
+    width: 12.5em; /* 12.5 x parent font-size (default 16px) = 200px */
+    height: 6.25em;
+    background-color: #dfd;
+  }
+
+  /* rem: relatif terhadap root html font-size */
+  .rem-text {
+    font-size: 1.25rem; /* 1.25 x 16px = 20px */
+  }
+  .rem-box {
+    width: 12.5rem; /* 200px */
+    height: 6.25rem;
+    background-color: #ddf;
+  }
+
+  /* vw/vh: relatif terhadap viewport */
+  .vw-text {
+    font-size: 3vw; /* 3% dari lebar layar */
+  }
+  .vw-box {
+    width: 30vw; /* 30% dari lebar layar */
+    height: 15vw;
+    background-color: #ffd;
+  }
+  .vh-box {
+    width: 20vw;
+    height: 20vh; /* 20% dari tinggi layar */
+    background-color: #dff;
+  }
+
+  /* Container dengan font-size berbeda untuk contoh em */
+  .parent-em {
+    font-size: 20px; /* ubah basis font-size untuk anak em */
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Ukuran font dengan px, em, rem, vw</h2>
+
+<div class="box px-text">font-size: 20px (fixed)</div>
+
+<div class="parent-em">
+  <div class="box em-text">font-size: 1.25em (1.25 x 20px parent = 25px)</div>
+</div>
+
+<div class="box rem-text">font-size: 1.25rem (1.25 x 16px root = 20px)</div>
+
+<div class="box vw-text">font-size: 3vw (3% dari lebar layar)</div>
+
+<hr />
+
+<h2>Ukuran kotak (box) dengan px, em, rem, vw, vh</h2>
+
+<div class="box px-box">width: 200px; height: 100px;</div>
+
+<div class="parent-em">
+  <div class="box em-box">width: 12.5em (12.5 x 20px = 250px); height: 6.25em;</div>
+</div>
+
+<div class="box rem-box">width: 12.5rem (12.5 x 16px = 200px); height: 6.25rem;</div>
+
+<div class="box vw-box">width: 30vw (30% lebar layar); height: 15vw;</div>
+
+<div class="box vh-box">width: 20vw; height: 20vh (20% tinggi layar);</div>
+
+</body>
+</html>
